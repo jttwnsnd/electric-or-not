@@ -1,8 +1,9 @@
+/* line 1, ../../compass/sass/style.scss */
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #333;
+  font-size: 14px;
 }
-
-a {
-  color: #00B7FF;
+/* line 4, ../../compass/sass/style.scss */
+body p {
+  color: blue;
 }
