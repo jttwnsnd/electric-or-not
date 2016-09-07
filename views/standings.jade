@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .panel.panel-default
+    .panel-heading Standings
+    .panel-body
+      p Here are the voting results
+    table.table
+      thead
+        tr
+          th Name
+          th Electric Votes
+          th Poser Votes
+          th Total Votes
+      tbody#standings
+      each image in theStandings
+        tr 
+          td= image.name
+          td= image.electric
+          td= image.poser
+          td= image.totalVotes
+
+  
