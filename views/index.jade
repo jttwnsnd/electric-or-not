@@ -1,6 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  p New text
+  h1 A node.js voting game - is the electric car displayed really electric?
+  #image
+    - var imgSource = '/images/' + imageToRender;
+    img(src=imgSource)
+  .button-holder
+    .button-form
+      form.vote-button(action='/electric', method='post')
+        input.btn.btn-info(type='hidden', name='image', value=imageToRender)
+        input.btn.btn-info(type='submit', name='submit', value='Electric!')
+  .button-holder
+    .button-form
+      form.vote-button(action='/electric', method='post')
+        input.btn.btn-info(type='hidden', name='image', value=imageToRender)
+        input.btn.btn-info(type='submit', name='submit', value='Poser!')
