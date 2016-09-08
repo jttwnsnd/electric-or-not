@@ -1,19 +1,22 @@
 extends layout
 
 block content
-  h2 Electric or Not Standings
-  .panel.panel-default.text-center
+  .panel.panel-default
     .panel-heading Standings
     .panel-body
       p Here are the voting results
     table.table
       thead
         tr
-          th.text-center Name
-          th.text-center Total Votes
+          th Name
+          th Electric Votes
+          th Poser Votes
+          th Total Votes
       each image in theStandings
         tr 
           td= image.name
+          td= image.electric
+          td= image.poser
           td= image.totalVotes
   a(href='/resetUserValues')
     button.btn.btn-primary Reset

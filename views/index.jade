@@ -1,17 +1,27 @@
 extends layout
 
 block content
-  h1 A node.js voting game - is the electric car displayed really electric?
-  #image
-    - var imgSource = '/images/' + imageToRender;
-    img(src=imgSource)
-  .button-holder
-    .button-form
-      form.vote-button(action='/electric', method='post')
-        input.btn.btn-info(type='hidden', name='image', value=imageToRender)
-        input.btn.btn-info(type='submit', name='submit', value='Electric!')
-  .button-holder
-    .button-form
-      form.vote-button(action='/electric', method='post')
-        input.btn.btn-info(type='hidden', name='image', value=imageToRender)
-        input.btn.btn-info(type='submit', name='submit', value='Poser!')
+  #top-greet.text-center
+    h1.bigger Electric or Not
+    h3 Think you which cars are solely electric?
+    p Play this game and see if you and your peers agree!
+  .col-sm-3.text-center#home-leader
+    h2 Current Leader
+    #leader-container.container-fluid
+      h4= theStandings[0].name
+      -var leaderPic = 'images/' + theStandings[0].imgSrc;
+      img#leader-pic(src=leaderPic)
+      h4 Total Votes
+      h6= theStandings[0].totalVotes
+
+  .col-sm-6.text-center#home-play
+    h2 Play Now!
+    #play-group
+      p Pick Electric or Poser for the list of cars.
+      a(href='/game')
+        button.btn.btn-primary Play Now!
+  .col-sm-3.text-center#home-bug
+    h2 Find A bug?
+    #bug-group
+      p Contact me! I want to know.
+  

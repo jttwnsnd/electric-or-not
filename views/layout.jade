@@ -3,6 +3,7 @@ html
   head
     meta(charset='utf-8')
     meta(http-equiv="X-UA-Compatible", content='IE-edge')
+    meta(name='viewport', content="width=device-width, initial-scale=1")
     title Rating App
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(re='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
@@ -10,4 +11,29 @@ html
     script(src='/stylesheets/jquery.min.js')
     script(src='/stylesheets/bootstrap.min.js')
   body
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        //- Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href="/") E.o.N.
+        //- Collect the nav links, forms, and other content for toggling
+        .collapse.navbar-collapse#navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href="/") Home 
+                span.sr-only
+            li
+              a(href="/game") Game
+            li
+              a(href="/standings") Standings
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href="http://www.github.com/jttwnsnd") Visit My Github
+            li
+              a(href="http://www.jt-townsend.com") My Portfolio
     block content

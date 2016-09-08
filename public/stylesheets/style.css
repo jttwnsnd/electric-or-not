@@ -1,9 +1,58 @@
-/* line 1, ../../compass/sass/style.scss */
+/* line 1, ../../compass/sass/style.sass */
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-/* line 4, ../../compass/sass/style.scss */
+/* line 4, ../../compass/sass/style.sass */
 body a {
   color: #00B7FF;
+}
+/* line 6, ../../compass/sass/style.sass */
+body #top-greet {
+  padding: 20px;
+}
+/* line 8, ../../compass/sass/style.sass */
+body #home-leader, body #home-play, body #home-bug {
+  margin-top: 10px;
+}
+/* line 12, ../../compass/sass/style.sass */
+body #home-leader #leader-container img {
+  width: 200px;
+  height: auto;
+}
+/* line 16, ../../compass/sass/style.sass */
+body #home-play #play-group {
+  padding-top: 40px;
+}
+/* line 18, ../../compass/sass/style.sass */
+body #home-play #play-group button {
+  margin-top: 10px;
+}
+/* line 21, ../../compass/sass/style.sass */
+body #home-bug #bug-group {
+  margin-top: 35px;
+}
+/* line 23, ../../compass/sass/style.sass */
+body #game-title {
+  padding: 20px;
+}
+/* line 26, ../../compass/sass/style.sass */
+body #image-container img {
+  width: 600px;
+  height: auto;
+  border-radius: 3px;
+}
+/* line 30, ../../compass/sass/style.sass */
+body .button-holder {
+  text-align: center;
+  padding: 30px 0px;
+}
+/* line 33, ../../compass/sass/style.sass */
+body .button-holder form {
+  display: inline-block;
+}
+
+/* line 36, ../../compass/sass/style.sass */
+.bigger {
+  font-size: 60px;
 }
